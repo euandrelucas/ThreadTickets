@@ -1,5 +1,5 @@
 # Ticket Bot
-- Um bot de suporte feito usando threads para o Discord, 100% customizável, feito em JavaScript e inspirado no Rio Helper do servidor [Elixir Lab](https://discord.gg/elixirlab) e na [Loritta Helper](https://discord.gg/loritta).
+- Um bot de suporte feito usando threads para o Discord, 100% customizável, feito em JavaScript e inspirado no Rio Helper do servidor [__Elixir Lab__](https://discord.gg/elixirlab) e na Loritta Helper do [__Loritta's Support__](https://discord.gg/loritta).
 - Bot feito para o servidor [__Gacha Community__](https://discord.gg/xVuWayRuqt).
 # Instalação
 - Clone o repositório do GitHub:
