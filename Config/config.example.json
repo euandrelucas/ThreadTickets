@@ -1,5 +1,6 @@
 {
     "token": "TOKEN DO BOT AQUI",
+    "publicThreadDelete": true,
     "ticket": {
         "enabled": "true",
         "label": "Abrir Ticket",

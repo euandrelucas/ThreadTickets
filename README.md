@@ -23,6 +23,7 @@
 ```js
 {
     "token": "TOKEN DO BOT AQUI", // Insira o TOKEN do seu bot
+    "publicThreadDelete": true, // Se o bot deve deletar as mensagens de notificação que a thread foi criada em threads públicas
     "ticket": {
         /* Configurações do botão de ticket */
         "enabled": "true", // Se você quer que o botão de abertura de ticket esteja ativo
