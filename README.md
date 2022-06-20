@@ -12,9 +12,8 @@
     `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash`
     `nvm install 16`
     `nvm use 16`
-- Instale os Pacotes:
+- Instale o Yarn:
     `npm install yarn -g`
-    `yarn install`
 - Adicione seu bot no seu servidor com este link:
     `https://discordapp.com/api/oauth2/authorize?client_id=ID_DO_BOT&permissions=8395136994304&scope=bot%20applications.commands`
 # Configurando o BOT
@@ -77,5 +76,7 @@
 # Inciando o BOT
 - Entre no diretório do bot:
     `cd ticket-bot`
+- Instale as depêndencias:
+    `yarn install`
 - Abra o terminal e execute:
     `yarn start`
