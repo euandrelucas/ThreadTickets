@@ -3,9 +3,9 @@
 - Bot feito para o servidor [__Gacha Community__](https://discord.gg/xVuWayRuqt).
 # Instalação
 - Clone o repositório do GitHub:
-    `git clone https://github.com/andrelucaas/ticket-bot.git`
+    `git clone https://github.com/andrelucaas/ThreadTickets.git`
 - Entre no diretório do bot:
-    `cd ticket-bot`
+    `cd ThreadTickets`
 - Instale o NodeJS:
 ### Windows:
 - Basta executar o instalador disponível no site do node: https://nodejs.org/en/
@@ -19,7 +19,7 @@
     `https://discordapp.com/api/oauth2/authorize?client_id=ID_DO_BOT&permissions=8395136994304&scope=bot%20applications.commands`
 # Configurando o BOT
 - Entre no diretório do bot:
-    `cd ticket-bot`
+    `cd ThreadTickets`
 - Abra o arquivo `config.example.json` e edite o seguinte:
 ```js
 {
@@ -79,7 +79,7 @@
 - Renomeie o arquivo para `config.json` e salve
 # Inciando o BOT
 - Entre no diretório do bot:
-    `cd ticket-bot`
+    `cd ThreadTickets`
 - Instale as depêndencias:
     `yarn install`
 - Abra o terminal e execute:
