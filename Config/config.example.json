@@ -1,12 +1,14 @@
 {
     "token": "TOKEN DO BOT AQUI",
     "publicThreadDelete": true,
+    "fecharTicket": "✅ Ticket fechado com sucesso, obrigado por entrar em contato.",
+    "commandName": "fecharticket",
     "ticket": {
         "enabled": "true",
         "label": "Abrir Ticket",
         "style": "PRIMARY",
         "emoji": "➕",
-        "reply": "📩  | {{userMention}} ticket criado! Envie todas as informações possíveis sobre seu caso e aguarde até que um {{supportRole}} responda.\nApós a sua questão ser sanada, você pode usar `/fecharticket` para encerrar o atendimento!",
+        "reply": "📩  | {{userMention}} ticket criado! Envie todas as informações possíveis sobre seu caso e aguarde até que um {{supportRole}} responda.\nApós a sua questão ser sanada, você pode usar `/{{commandName}}` para encerrar o atendimento!",
         "threadType": "private"
     },
     "selectMenus": [

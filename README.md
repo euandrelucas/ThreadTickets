@@ -25,6 +25,8 @@
 {
     "token": "TOKEN DO BOT AQUI", // Insira o TOKEN do seu bot
     "publicThreadDelete": true, // Se o bot deve deletar as mensagens de notificação que a thread foi criada em threads públicas
+    "fecharTicket": "✅ Ticket fechado com sucesso, obrigado por entrar em contato.", // Mensagem exibida ao fechar um ticket
+    "commandName": "fecharticket", // Nome do comando que o bot deve usar para fechar um ticket
     "ticket": {
         /* Configurações do botão de ticket */
         "enabled": "true", // Se você quer que o botão de abertura de ticket esteja ativo
@@ -38,7 +40,7 @@
         DANGER: Vermelho
         */
         "emoji": "➕", // O emoji que aparecerá no botão
-        "reply": "📩  | {{userMention}} ticket criado! Envie todas as informações possíveis sobre seu caso e aguarde até que um {{supportRole}} responda.\nApós a sua questão ser sanada, você pode usar `/fecharticket` para encerrar o atendimento!", // A mensagem enviada na thread quando criada, você pode usar alguns parralex:
+        "reply": "📩  | {{userMention}} ticket criado! Envie todas as informações possíveis sobre seu caso e aguarde até que um {{supportRole}} responda.\nApós a sua questão ser sanada, você pode usar `/{{commandName}}` para encerrar o atendimento!", // A mensagem enviada na thread quando criada, você pode usar alguns parralex:
         /*
         = PARRALEX =
         {{userMention}}: Menciona o usuário que criou o ticket

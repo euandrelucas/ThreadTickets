@@ -9,6 +9,10 @@ client.db = new (require('./botDatabase'))('./Data/banco.json')
 
 client.on('ready', async () => {
   console.log('[BOT] Estou pronto para ser usado!'.green)
+  client.application.commands.create({
+    name: config.commandName,
+    description: 'Feche o ticket com esse comando.'
+  })
   const lastMessage = await client.db.get('lastMessage')
   const channel = await client.channels.cache.get(config.ticketChannel)
   if (lastMessage) {
@@ -120,6 +124,18 @@ client.on('ready', async () => {
 })
 
 client.on('interactionCreate', async interaction => {
+  if (interaction.isCommand()) {
+    if (interaction.commandName === 'fecharticket') {
+      interaction.channel.edit({
+        archived: true,
+        locked: true,
+        invitable: false
+      })
+      interaction.reply({
+        content: config.fecharTicket
+      })
+    }
+  }
   if (interaction.isButton()) {
     if (config.ticket.threadType === 'private') {
       await interaction.channel.threads.create({
@@ -128,7 +144,7 @@ client.on('interactionCreate', async interaction => {
         type: 'GUILD_PRIVATE_THREAD',
         reason: `Criei um ticket para o usuário: ${interaction.user.tag} (${interaction.user.id})`
       }).then((ticket) => {
-        ticket.send(config.ticket.reply.replace(/{{userMention}}/g, interaction.user).replace(/{{supportRole}}/g, `<@&${config.supportRole}>`))
+        ticket.send(config.ticket.reply.replace(/{{userMention}}/g, interaction.user).replace(/{{supportRole}}/g, `<@&${config.supportRole}>`).replace(/{{commandName}}/g, config.commandName))
       })
     } else {
       await interaction.channel.threads.create({
@@ -136,7 +152,7 @@ client.on('interactionCreate', async interaction => {
         autoArchiveDuration: 10080,
         reason: `Criei um ticket para o usuário: ${interaction.user.tag} (${interaction.user.id})`
       }).then((ticket) => {
-        ticket.send(config.ticket.reply.replace(/{{userMention}}/g, interaction.user).replace(/{{supportRole}}/g, `<@&${config.supportRole}>`))
+        ticket.send(config.ticket.reply.replace(/{{userMention}}/g, interaction.user).replace(/{{supportRole}}/g, `<@&${config.supportRole}>`).replace(/{{commandName}}/g, config.commandName))
       })
     }
   }
