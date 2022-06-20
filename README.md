@@ -87,8 +87,8 @@
 # 🐦 Github Status
 <p align="center">
 <a href="https://nodejs.org/en/download/"><img src="https://img.shields.io/badge/Node.JS-43853D.svg?style=for-the-badge&amp;logo=node.js&amp;logoColor=white" alt="Node Version"></a> <a href="https://github.com/andrelucaas/ThreadTickets/issues"><img src="https://img.shields.io/github/issues/andrelucaas/ThreadTickets?style=for-the-badge&amp;color=green" alt="Issues"></a> <a href="https://github.com/andrelucaas/ThreadTickets/pulls"><img src="https://img.shields.io/github/issues-pr/andrelucaas/ThreadTickets?style=for-the-badge&amp;color=green" alt=""></a>
-<h2 id="-stargazers-">✨ Stargazers:</h2>
+<h1 id="-stargazers-">✨ Stargazers:</h1>
 <p><a href="https://github.com/andrelucaas/ThreadTickets/stargazers"><img src="https://reporoster.com/stars/andrelucaas/ThreadTickets" alt="Stargazers"></a></p>
-<h2 id="-forkers-">✨ Forkers:</h2>
+<h1 id="-forkers-">✨ Forkers:</h1>
 <p><a href="https://github.com/andrelucaas/ThreadTickets/network/members"><img src="https://reporoster.com/forks/andrelucaas/ThreadTickets" alt="Forkers"></a></p>
 </p>
