@@ -9,9 +9,9 @@
 ### Windows:
 - Basta executar o instalador disponível no site do node: https://nodejs.org/en/
 ### Linux: (Ubuntu)
-    `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash`
-    `nvm install 16`
-    `nvm use 16`
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+    nvm install 16
+    nvm use 16
 - Instale o Yarn:
     `npm install yarn -g`
 - Adicione seu bot no seu servidor com este link:
