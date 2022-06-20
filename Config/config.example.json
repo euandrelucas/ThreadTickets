@@ -1,0 +1,48 @@
+{
+    "token": "TOKEN DO BOT AQUI",
+    "ticket": {
+        "enabled": "true",
+        "label": "Abrir Ticket",
+        "style": "PRIMARY",
+        "emoji": "➕",
+        "reply": "📩  | {{userMention}} ticket criado! Envie todas as informações possíveis sobre seu caso e aguarde até que um {{supportRole}} responda.\nApós a sua questão ser sanada, você pode usar `/fecharticket` para encerrar o atendimento!",
+        "threadType": "private"
+    },
+    "selectMenus": [
+        {
+            "label": "Suporte",
+            "description": "Peça ajuda sobre os mais variados assuntos do servidor com nossa equipe.",
+            "emoji": "💬",
+            "value": "support",
+            "response": "Se precisar de ajuda, crie um ticket abaixo e nós iremos te ajudar o mais rápido possível."
+        },
+        {
+            "label": "Denúncia",
+            "description": "Denuncie um usuário que infringiu as regras do servidor.",
+            "emoji": "🚨",
+            "value": "report",
+            "response": "Para fazer uma denúncia, vamos precisar do motivo da denúncia, autores do ocorrido e provas, ao usar esse atendimento para denúncias falsas e afins, você pode ser punido. Se quiser prosseguir com sua denúncia, crie um ticket abaixo."
+        },
+        {
+            "label": "Parceria",
+            "description": "Se torne um parceiro nosso de maneira facil e rápida e receba benefícios.",
+            "emoji": "🤝",
+            "value": "partner",
+            "response": "Para se tornar um parceiro, crie um ticket abaixo e nós iremos te ajudar o mais rápido possível."
+        }
+    ],
+    "ticketEmbed": {
+        "title": "Central de Ajuda | Nome do seu servidor",  
+        "description": "Nessa seção, você pode tirar suas dúvidas ou entrar em contato diretamente com a nossa equipe do Nome do seu servidor.",
+        "banner": "https://i.imgur.com/QbpUcOa.png",
+        "footer": "Se não tiver uma categoria específica para seu problema, entre em contato com a nossa equipe com a categoria de Suporte.",
+        "color": "BLUE",
+        "credits": true,
+        "footerIcon": {
+            "enabled": true,
+            "url": "https://i.imgur.com/a6eY6fd.png"
+        }
+    },
+    "ticketChannel": "973592012680990800",
+    "supportRole": "973591097613906071"
+}
